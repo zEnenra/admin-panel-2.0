@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+    <link rel="stylesheet" href="input.css"> 
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body> 
+  <form action="URL" class="entry-field"> 
+    <div class="entry-field__entering">
+      <div class="entry-field__date-time">Дата и время заказа</div> 
+        <input class="entry-field__input"  type="text" name="work__input" placeholder="Введите"> 
+    </div>
+    <div class="entry-field__incorrect">
+      <div class="entry-field__date-time">Дата и время заказа</div>
+        <div class="entry-field__input__wrapper">
+          <input class="entry-field__input__wrong"  placeholder="06.12.2021" name="work__input">
+          <input class="entry-field__button" type='button' onclick='window.location.href="#"'  value ='обновить'>
+        </div>
+    </div>
+    <div class="entry-field__blocking">
+      <div class="entry-field__date-time">Дата и время заказа</div>
+        <input class="entry-field__input__blocking"  type="text" readonly name="work__input" placeholder="06.12.2021">
+        <div class="entry-field__input__locked"></div>
+    </div>
+  </form>
+</body>
+</html>
